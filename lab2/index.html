@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Таблиця</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+      color: #000D12;
+    }
+
+    td {
+      border: 4px solid black;
+      padding: 2rem;
+      text-align: left;
+      word-wrap: break-word;
+    }
+
+    tr:nth-child(1) {
+      background-color: #068f8f;
+    }
+
+    tr:nth-child(2) {
+      background-color: #f5f506;
+    }
+
+    tr:nth-child(1):hover {
+      background-color: #f5f506;
+    }
+
+    tr:nth-child(2):hover {
+      background-color: #068f8f;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td rowspan="2">Нестеров</td>
+      <td colspan="2">Нікіта</td>
+      <td>Миколайович</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">IM-11</td>
+      <td rowspan="2">#2</td>
+      <td rowspan="3">6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td rowspan="2">123</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+    </tr>
+  </table>
+
+  <div class="calculator-wrapper">
+    <div class="calculator transform">
+      <div class="screen">12:00</div>
+      <div class="buttons-container">
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
